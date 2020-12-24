@@ -1,0 +1,19 @@
+/* color */
+.border-tertiary {
+    border: 1px solid $tertiary;
+}
+.border-top-tertiary {
+    border-top: 1px solid $tertiary;
+}
+/* radius */
+.rounded-sm {
+    border-radius: 0.125rem;
+}
+.rounded-top-sm {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+}
+.rounded-bottom-sm {
+    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+}

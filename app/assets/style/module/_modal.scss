@@ -1,0 +1,36 @@
+.modal {
+    &-content {
+        border: 1px solid $tertiary;
+        border-radius: 0.125rem;
+    }
+    &-header {
+        border-bottom: 0;
+        border-bottom-left-radius: 0.125rem;
+        border-bottom-right-radius: 0.125rem;
+        padding: 2rem;
+        & .close {
+            margin: 0;
+            margin-left: auto;
+            padding: 0;
+        }
+    }
+    &-body {
+        padding: 0 2rem;
+    }
+    &-footer {
+        border-top: 0;
+        border-top-left-radius: 0.125rem;
+        border-top-right-radius: 0.125rem;
+        padding: 0 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .portrait {
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 168px;
+        height: 168px;
+    }
+}

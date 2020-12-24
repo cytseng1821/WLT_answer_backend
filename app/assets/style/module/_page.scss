@@ -1,0 +1,31 @@
+.page {
+    &-item {
+        &:first-child .page-link {
+            border-top-left-radius: 0.125rem;
+            border-bottom-left-radius: 0.125rem
+        }
+        &.active .page-link {
+            background: $primary;
+            border: 1px solid $primary;
+            color: $white;
+        }
+    }
+    &-link {
+        position: relative;
+        border: 1px solid $primary;
+        width: 2rem;
+        height: 2rem;
+        color: $dark;
+        line-height: 1.5;
+        & span {
+            position: absolute;
+            top: 0.25rem;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+        &:hover {
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.table {
+    margin-bottom: 0;
+    .thead {
+        th {
+            border-top: none;
+            border-bottom: 1px solid $dark;
+            height: 2.75rem;
+            padding: 1rem 0;
+            padding-bottom: 0.25rem;
+            vertical-align: middle;
+        }
+    }
+    td {
+        border-top: 1px solid $tertiary;
+        border-bottom: 1px solid $tertiary;
+        height: 3.5rem;
+        padding: 1rem 0;
+        vertical-align: middle;
+    }
+    &-hover {
+        tbody {
+            tr:hover {
+                background-color: $secondary;
+            }
+        }
+    }
+}

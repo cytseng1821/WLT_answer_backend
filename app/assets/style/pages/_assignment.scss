@@ -1,0 +1,58 @@
+.assignment {
+    &-list {
+        width: 320px;
+        li {
+            padding: 12px;
+            &:first-child {
+                border-radius: 0.125rem 0.125rem 0 0;
+            }
+            &:last-child {
+                border-radius: 0 0 0.125rem 0.125rem;
+            }
+        }
+        li:hover {
+            background: #f8f9fa;
+        }
+        .active, .active:hover {
+            background: $secondary;
+        }
+    }
+    &-current {
+        flex-grow: 1;
+        .portrait {
+            background-image: url("https://hexschool.github.io/webLayoutTraining1st/week5/andychen.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+        }
+        .portrait-emilywang {
+            background-image: url("https://hexschool.github.io/webLayoutTraining1st/week5/emilywang.jpeg");
+        }
+        .assignment-info {
+            width: 488px;
+            .mark {
+                display: inline-block;
+                background: $secondary;
+                border-radius: 0.125rem;
+                padding: 0 0.25rem;
+                color: $primary;
+            }
+        }
+        .assignment-reply {
+            left: 0;
+            right: 0;
+            bottom: -6px;
+            .assignment-btn {
+                right: 24px;
+                bottom: 16px;
+            }
+            .input-reply {
+                width: 100%;
+                height: 279px;
+                color: #00000062;
+            }
+        }
+    }
+}

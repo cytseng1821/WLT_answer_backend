@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANSWER | Assignment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="d-flex">
+        <aside class="aside d-flex flex-column justify-content-between py-5">
+            <div>
+                <h1 class="logo ml-5"><a href="index.html">AnswerLogo</a></h1>
+                <ul class="menu list-unstyled font-weight-bold mt-5">
+                    <li>
+                        <a class="d-flex pl-5 py-1" href="dashboard.html">
+                            <span class="material-icons align-middle mr-3">insert_chart</span>
+                            <h5>Dashboard</h5>
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex pl-5 py-1" href="question.html">
+                            <span class="material-icons align-middle mr-3">forum</span>
+                            <h5>Question</h5>
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex pl-5 py-1" href="assignment.html">
+                            <span class="material-icons align-middle mr-3">assignment</span>
+                            <h5>Assignment</h5>
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex pl-5 py-1" href="course.html">
+                            <span class="material-icons align-middle mr-3">video_library</span>
+                            <h5>Course</h5>
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex pl-5 py-1" href="admin.html">
+                            <span class="material-icons align-middle mr-3">people</span>
+                            <h5>Admin</h5>
+                        </a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="d-flex pl-5 py-1" href="settings.html">
+                            <span class="material-icons align-middle mr-3">settings</span>
+                            <h5>Settings</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="identity d-flex align-items-center ml-5">
+                <div class="portrait rounded-circle mr-3"></div>
+                <div>
+                    <p class="font-weight-bold">Andy Chen</p>
+                    <p class="text-gray font-size-sm line-height-md mt-1">andy0401@mail.com</p>
+                </div>
+            </div>
+        </aside>
+        
+<main class="main">
+    <a class="menu-item item3 d-flex pl-5 py-1" href="assignment.html">
+        <span class="material-icons align-middle mr-3">assignment</span>
+        <h5>Assignment</h5>
+    </a>
+    <header class="header d-flex justify-content-between align-items-center p-5">
+        <div class="d-flex align-items-center">
+            <h2>Assignment</h2>
+            <div class="dropdown ml-6">
+                <button class="btn btn-shadow-tertiary btn-px-sm" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="align-middle">All Courses</span>
+                    <span class="material-icons align-middle text-primary">expand_more</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#course_all">All Courses</a>
+                    <a class="dropdown-item" href="#course_html">HTML</a>
+                    <a class="dropdown-item" href="#course_css">CSS</a>
+                    <a class="dropdown-item" href="#course_javescript">JavaScript</a>
+                    <a class="dropdown-item" href="#course_jquery">JQuery</a>
+                    <a class="dropdown-item" href="#course_rwd">RWD</a>
+                    <a class="dropdown-item" href="#course_bootstrapt4">Bootsrapt 4</a>
+                </div>
+            </div>
+        </div>
+        <ul class="d-flex list-unstyled">
+            <li>
+                <a class="btn btn-outline-dark btn-icon" href="#icon_search" role="button"><span class="material-icons align-middle">search</span></a>
+            </li>
+            <li class="ml-4">
+                <a class="btn btn-outline-dark btn-icon" href="#icon_notify" role="button"><span class="material-icons align-middle">notifications_active</span></a>
+            </li>
+        </ul>
+    </header>
+    <div class="px-5 pt-2 pb-5">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="dropdown">
+                <button class="btn btn-shadow-tertiary btn-padding-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="align-middle">All (4)</span>
+                    <span class="material-icons align-middle text-primary">expand_more</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#assignment_all">All</a>
+                    <a class="dropdown-item" href="#assignment_chapter1">Chapter Assignment 1</a>
+                    <a class="dropdown-item" href="#assignment_chapter2">Chapter Assignment 2</a>
+                    <a class="dropdown-item" href="#assignment_final">Final Assignment</a>
+                </div>
+            </div>
+            <p class="text-gray font-size-xs line-height-md">2 comments</p>
+        </nav>
+        <div class="d-flex mt-1">
+            <ul class="assignment-list list-unstyled font-size-xs line-height-md mr-3">
+                <li class="active border-tertiary">
+                    <div class="d-flex justify-content-between">
+                        <p>Chapter Assignment 2</p>
+                        <p>4 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <h5>Please check this file…</h4>
+                        <p class="text-gray">Emily Wang</p>
+                    </div>
+                </li>
+                <li class="border-tertiary border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <p>Chapter Assignment 1</p>
+                        <p>12 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <h5>My Homework</h4>
+                        <p class="text-gray">David Xu</p>
+                    </div>
+                </li>
+                <li class="border-tertiary border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <p>Final Assignment</p>
+                        <p>18 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <h5>Have a problem with this…</h4>
+                        <p class="text-gray">Tony Wei</p>
+                    </div>
+                </li>
+                <li class="border-tertiary border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <p>Final Assignment</p>
+                        <p>19 hrs ago</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <h5>Did I do it right?</h4>
+                        <p class="text-gray">Christina Lin</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="assignment-current position-relative">
+                <div class="d-flex justify-content-between align-items-center bg-secondary border-tertiary rounded-top-sm line-height-md px-3 py-2h">
+                    <div>
+                        <p class="font-size-xs">Chapter Assignment 2 / HTML&CSS</p>
+                        <h4 class="mt-1">Please check this file for me, thanks!</h4>
+                    </div>
+                    <a class="btn btn-outline-dark btn-icon" href="#icon_more" role="button"><span class="material-icons">more_vert</span></a>
+                </div>
+                <ul class="border-tertiary border-top-0 rounded-bottom-sm list-unstyled pl-3 pr-5">
+                    <li class="d-flex justify-content-between">
+                        <div class="portrait portrait-emilywang rounded-circle mr-2 mt-3"></div>
+                        <div class="assignment-info py-3">
+                            <h5>Emily Wang</h4>
+                            <p class="font-size-xs line-height-md text-gray mt-1">10:38 AM (4 hours ago)</p>
+                            <p class="font-size-sm mt-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="mark">div</span> is bigger than the height of the <span class="mark">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>
+                                What is the gap or extra space below image?</p>
+                            <a class="btn btn-secondary btn-download mt-3" href="#btn_download" role="button">
+                                <span class="material-icons align-middle">attach_file</span>
+                                <span class="align-middle">HW-2-David.zip</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="portrait rounded-circle mr-2 mt-3"></div>
+                        <div class="assignment-info border-top-tertiary py-3">
+                            <h5 class="d-flex justify-content-between">
+                                Andy Chen (You)
+                                <ul class="d-flex list-unstyled">
+                                    <li>
+                                        <a class="btn btn-outline-dark btn-icon" href="#icon_star" role="button"><span class="material-icons align-middle">star_border</span></a>
+                                    </li>
+                                    <li class="ml-4">
+                                        <a class="btn btn-outline-dark btn-icon" href="#icon_edit" role="button"><span class="material-icons align-middle">edit</span></a>
+                                    </li>
+                                </ul>
+                            </h4>
+                            <p class="font-size-xs line-height-md text-gray mt-1">13:24 AM (1 hours ago)</p>
+                            <p class="font-size-sm mt-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
+                                You can:</p>
+                            <ul class="list-style-disc font-size-sm mt-4">
+                                <li>adjust the <span class="mark">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="mark">middle</span> ) or</li>
+                                <li>change the <span class="mark">display</span> so it isn’t inline.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="collapse assignment-reply position-absolute" id="collapse_reply">
+                    <div class="bg-secondary border-tertiary rounded-top-sm px-4 py-3">
+                        <ul class="d-flex list-unstyled">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-padding-0" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="align-middle">Body Text</span>
+                                        <span class="material-icons align-middle">arrow_drop_down</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                        <a class="dropdown-item" href="#font_normal">Normal</a>
+                                        <a class="dropdown-item" href="#font_12px">12px</a>
+                                        <a class="dropdown-item" href="#font_14px">14px</a>
+                                        <a class="dropdown-item" href="#font_16px">16px</a>
+                                        <a class="dropdown-item" href="#font_20px">20px</a>
+                                        <a class="dropdown-item" href="#font_24px">24px</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_bold" role="button"><span class="material-icons align-middle">format_bold</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_italic" role="button"><span class="material-icons align-middle">format_italic</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_list_bulleted" role="button"><span class="material-icons align-middle">format_list_bulleted</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_list_numbered" role="button"><span class="material-icons align-middle">format_list_numbered</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_image" role="button"><span class="material-icons align-middle">image</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_link" role="button"><span class="material-icons align-middle">insert_link</span></a>
+                            </li>
+                            <li class="ml-4">
+                                <a class="btn btn-outline-dark btn-icon" href="#edit_code" role="button"><span class="material-icons align-middle">code</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="position-relative">
+                        <textarea name="reply" type="text" placeholder="Reply an answer…" class="input-reply border-tertiary border-top-0 rounded-bottom-sm px-4 py-3"></textarea>
+                        <div class="assignment-btn d-flex position-absolute">
+                            <a class="btn btn-outline-primary btn-edit" data-toggle="collapse" href="#collapse_reply" role="button" aria-expanded="false" aria-controls="collapse_reply">Cancel</a>
+                            <a class="btn btn-primary btn-edit ml-2" data-toggle="collapse" href="#collapse_reply" role="button" aria-expanded="false" aria-controls="collapse_reply">Reply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <ul class="d-flex list-unstyled">
+                        <li>
+                            <a class="btn btn-outline-dark btn-icon" href="#assignment_last" role="button" aria-label="Previous"><span class="material-icons align-middle">keyboard_arrow_left</span></a>
+                        </li>
+                        <li class="ml-4">
+                            <a class="btn btn-outline-dark btn-icon" href="#assignment_next" role="button" aria-label="Next"><span class="material-icons align-middle">keyboard_arrow_right</span></a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-edit" href="#btn_read" role="button">Mark as read</a>
+                        <a class="btn btn-primary btn-edit ml-3" data-toggle="collapse" href="#collapse_reply" role="button" aria-expanded="false" aria-controls="collapse_reply">Reply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

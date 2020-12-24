@@ -1,0 +1,46 @@
+/* layout */
+.main {
+    flex-grow: 1;
+}
+/* body */
+body {
+    font-family: Lato, "Noto Sans", sans-serif;
+    color: $dark;
+}
+p {
+    margin-bottom: 0;
+}
+/* title */
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: bold;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+h4, h5 {
+    font-size: 16px;
+}
+/* a */
+a {
+    color: $dark;
+}
+a:hover {
+    color: $primary;
+    text-decoration: none;
+}
+/* ul, li */
+ul {
+    margin-bottom: 0;
+}
+.list-style-disc {
+    list-style: disc;
+}
+/* button */
+button.close {
+    opacity: 1;
+}

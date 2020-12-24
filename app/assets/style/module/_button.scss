@@ -1,0 +1,129 @@
+.btn {
+    border-radius: 0.125rem;
+    font-weight: bold;
+    &.disabled {
+        color: $tertiary;
+        opacity: 1;
+    }
+    /* general botton */
+    &-primary {
+        color: $white;
+        background: $primary;
+        border: 1px solid $primary;
+        transition-duration: 0s;
+        &:hover, &:not(:disabled):not(.disabled):active {
+            color: $white;
+            background: #1e5c3d;
+            border: 1px solid $primary;
+        }
+    }
+    &-secondary {
+        color: $dark;
+        background: $secondary;
+        border: 1px solid $tertiary;
+        &:hover, &:not(:disabled):not(.disabled):active {
+            color: $dark;
+            background: $tertiary;
+            border: 1px solid $tertiary;
+        }
+    }
+    /* outline button */
+    &-outline {
+        &-primary {
+            color: $primary;
+            border: 1px solid $primary;
+            &:hover, &:not(:disabled):not(.disabled):active {
+                color: $primary;
+                background: $secondary;
+                border: 1px solid $primary;
+            }
+        }
+        &-tertiary {
+            color: $primary;
+            border: 1px solid $tertiary;
+            &:hover, &:not(:disabled):not(.disabled):active {
+                color: $white;
+                background: $primary;
+            }
+            &:disabled, &:disabled:hover {
+                color: $tertiary;
+                background: transparent;
+            }
+        }
+        &-dark {
+            color: $dark;
+            border: 1px solid $dark;
+            &:hover, &:not(:disabled):not(.disabled):active {
+                color: $primary;
+                background: transparent;
+                border: 1px solid $primary;
+            }
+        }
+        &-danger {
+            color: $danger;
+            border: 1px solid $danger;
+            &:hover, &:not(:disabled):not(.disabled):active {
+                color: $white;
+                background: $danger;
+            }
+        }
+    }
+    /* customized buttom */
+    &-icon {
+        border: none;
+        padding: 0;
+        height: 24px;
+        line-height: 1;
+        &:hover, &:not(:disabled):not(.disabled):active {
+            background: transparent;
+            border: none;
+        }
+        &:focus, &:not(:disabled):not(.disabled):active:focus {
+            box-shadow: 0 0 0 0.2rem rgba(42,131,86,.5);
+        }
+    }
+    &-download {
+        padding-left: 0.75rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    &-edit {
+        padding: 0.5rem 2rem;
+    }
+    &-modal {
+        padding: 1rem;
+        width: 100%;
+    }
+    /* other settings */
+    &-padding-0 {
+        padding: 0;
+    }
+    &-px-sm {
+        padding: 0 0.25rem;
+    }
+    &-primary, &-outline-primary {
+        &:focus, &:not(:disabled):not(.disabled):active:focus {
+            box-shadow: 0 0 0 0.2rem rgba(42,131,86,.5); // default: inset hoff voff blur #000;
+        }
+    }
+    &-outline-danger {
+        &:focus, &:not(:disabled):not(.disabled):active:focus {
+            box-shadow: 0 0 0 0.2rem rgba(227,0,110,.5);
+        }
+    }
+    &-shadow-tertiary, &-secondary, &-outline-tertiary {
+        &:focus, &:not(:disabled):not(.disabled):active:focus {
+            box-shadow: 0 0 0 0.2rem rgba(205,221,205,.5);
+        }
+    }
+    /*----collapse----*/
+    &.collapsed {
+        .material-icons {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+
+
